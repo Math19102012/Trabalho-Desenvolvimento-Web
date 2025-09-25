@@ -34,7 +34,7 @@ npm start
 ```json
 {
   "titulo": "Trabalho - Desenvolvimento Web",
-   "descricao": "Lista de Tarefas",
+  "descricao": "Lista de Tarefas",
   "concluida": false
 }
 ```
