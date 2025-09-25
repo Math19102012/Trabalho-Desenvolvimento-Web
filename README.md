@@ -1,7 +1,7 @@
-# API de Lista de Tarefas (CRUD) — Node.js + Express
+# API Lista de Tarefas (CRUD) 
 
 Projeto simples para **criar, listar, atualizar e apagar** tarefas.  
-Armazenamento **em memória** (sem banco). Comunicação via **JSON**.
+Armazenamento **em memória** (sem banco de dado), a comunicação entre cliente e servidor é via **JSON**.
 
 ---
 
@@ -16,7 +16,7 @@ Armazenamento **em memória** (sem banco). Comunicação via **JSON**.
 npm install
 npm start
 ```
-Servidor em: `http://localhost:3000`
+
 
 ---
 
@@ -50,17 +50,17 @@ Servidor em: `http://localhost:3000`
 
 ---
 
-## 🧪 Como testar no Postman (e tirar os 4 prints)
+## 🧪 Como testar no Postman
 1. **POST** `http://localhost:3000/tarefas`  
    - Body → **raw** → **JSON** (usar exemplo acima)  
-   - Esperado: **201 Created** com o objeto da tarefa (anote o **id**)
+   - Esperado: **201 Created** 
 
 2. **GET** `http://localhost:3000/tarefas`  
-   - Esperado: **200 OK** com um **array** contendo a tarefa criada
+   - Esperado: **200 OK** com um **array** 
 
 3. **PUT** `http://localhost:3000/tarefas/:id`  
    - Troque `:id` pelo id retornado no POST  
-   - Body → **raw** → **JSON** (usar exemplo acima)  
+   - Body → **raw** → **JSON** 
    - Esperado: **200 OK** com a tarefa **atualizada**
 
 4. **DELETE** `http://localhost:3000/tarefas/:id`  
@@ -68,7 +68,6 @@ Servidor em: `http://localhost:3000`
    - Esperado: **204 No Content**
 
 > Salve os prints em **`/prints`** com estes nomes:  
-> `post_tarefas.png`, `get_tarefas.png`, `put_tarefas.png`, `delete_tarefas.png`.
 
 ---
 
@@ -76,13 +75,13 @@ Servidor em: `http://localhost:3000`
 ```
 /
 ├─ postman/
-│  └─ Lista de Tarefas (4 rotas).postman_collection.json
-├─ prints/                  # coloque aqui os 4 prints do Postman
+│  └─ Lista de Tarefas.json
+├─ prints/                 
 ├─ src/
 │  ├─ controllers/
 │  │  └─ tarefasController.js
 │  ├─ dados/
-│  │  └─ bancoMemoria.js     # “banco” em memória (array)
+│  │  └─ bancoMemoria.js    
 │  ├─ app.js
 │  ├─ routes.js
 │  └─ server.js
@@ -94,11 +93,4 @@ Servidor em: `http://localhost:3000`
 
 ## ℹ️ Observações
 - Os dados ficam **só em memória**; ao reiniciar o servidor, tudo é apagado.  
-- Em **POST** e **PUT**, use `Content-Type: application/json`.  
 - Se **GET /tarefas** voltar `[]`, faça o **POST** novamente (provavelmente o servidor reiniciou).
-
----
-
-## 📚 Referências
-- Express: <https://expressjs.com/>  
-- `.gitignore`: <https://www.toptal.com/developers/gitignore>
