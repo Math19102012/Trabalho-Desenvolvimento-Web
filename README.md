@@ -20,7 +20,7 @@ npm start
 
 ---
 
-## 📡 Rotas da API (4 exigidas)
+## 📡 Rotas da API
 - **GET** `/tarefas` → lista todas as tarefas  
 - **POST** `/tarefas` → cria uma nova tarefa  
 - **PUT** `/tarefas/:id` → atualiza uma tarefa existente  
