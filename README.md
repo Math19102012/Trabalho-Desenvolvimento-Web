@@ -26,8 +26,6 @@ npm start
 - **PUT** `/tarefas/:id` → atualiza uma tarefa existente  
 - **DELETE** `/tarefas/:id` → apaga uma tarefa existente  
 
-> Observação: **não** há `GET /tarefas/:id` neste projeto (atende ao pedido do professor).
-
 ---
 
 ## 🧾 Exemplos de JSON
