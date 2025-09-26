@@ -57,7 +57,7 @@ npm start
    - Esperado: **200 OK** com um **array** 
 
 3. **PUT** `http://localhost:3000/tarefas/:id`  
-   - Troque `:id` pelo id retornado no POST  
+   - Troque `:id` pelo id retornado no **POST**  
    - Body → **raw** → **JSON** 
    - Esperado: **200 OK** com a tarefa **atualizada**
 
@@ -90,5 +90,5 @@ npm start
 ---
 
 ## ℹ️ Observações
-- Os dados ficam **só em memória**; ao reiniciar o servidor, tudo é apagado.  
+- Os dados ficam **só em memória**, se o servidor for reiniciado tudo é apagado.  
 - Se **GET /tarefas** voltar `[]`, faça o **POST** novamente (provavelmente o servidor reiniciou).
