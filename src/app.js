@@ -6,7 +6,7 @@ const app = express();
 // Sem isso o body JSON não funciona
 app.use(express.json());
 
-// Rota simples pra ver se está vivo
+// Rota para testar
 app.get('/', (_, res) => res.json({ ok: true, dica: 'usar /tarefas' }));
 
 // Rotas da API 
